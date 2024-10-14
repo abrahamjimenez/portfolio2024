@@ -1,5 +1,6 @@
 <h2>Tools & Skills</h2>
-<p>skill1</p>
-<p>skill2</p>
-<p>skill3</p>
-<p>skill4</p>
+<div class="skill-container">
+  @for (skill of skills; track skill) {
+    <p class="skill-container__skill">{{ skill }}</p>
+  }
+</div>
