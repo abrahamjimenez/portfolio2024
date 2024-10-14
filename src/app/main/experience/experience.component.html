@@ -1,6 +1,6 @@
 <h2>Experience</h2>
-<h3>Developer Role</h3>
-<p>Brief project description</p>
 
-<h3>Developer Role</h3>
-<p>Brief project description</p>
+@for (experience of experiences; track experience.company) {
+  <h3>{{ experience.company }} - {{ experience.title }}</h3>
+  <p>{{ experience.description }}</p>
+}
