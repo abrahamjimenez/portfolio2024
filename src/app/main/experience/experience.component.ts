@@ -5,8 +5,14 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './experience.component.html',
-  styleUrl: './experience.component.scss'
+  styleUrl: './experience.component.scss',
 })
 export class ExperienceComponent {
-
+  experiences: { company: string; title: string; description: string }[] = [
+    {
+      company: 'Subitt',
+      title: 'Full-stack Web Developer',
+      description: '',
+    },
+  ];
 }
