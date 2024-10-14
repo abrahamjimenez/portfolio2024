@@ -1,0 +1,11 @@
+.skill-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+
+  &__skill {
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 2px;
+  }
+}
