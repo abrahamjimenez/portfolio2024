@@ -1,11 +1,6 @@
-.tools-and-skills__skill-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
+@import "../../../styles";
+@import "../../../mixins";
 
-  &__skill {
-    border: 1px solid;
-    border-radius: 8px;
-    padding: 2px;
-  }
+.tools-and-skills__skill-container {
+  @include technologies();
 }

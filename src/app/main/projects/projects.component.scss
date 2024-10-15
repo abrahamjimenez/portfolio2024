@@ -1,11 +1,6 @@
-.projects__tools-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
+@import "../../../styles";
+@import "../../../mixins";
 
-  &__tool {
-    border: 1px solid;
-    border-radius: 8px;
-    padding: 2px;
-  }
+.projects__tools-container {
+  @include technologies();
 }

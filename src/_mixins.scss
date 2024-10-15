@@ -1,0 +1,15 @@
+@import "./styles";
+
+@mixin technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+
+  &__skill,
+  &__tool {
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 2px;
+    background: $secondary-color;
+  }
+}

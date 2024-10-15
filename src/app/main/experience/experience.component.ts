@@ -8,11 +8,14 @@ import { Component } from '@angular/core';
   styleUrl: './experience.component.scss',
 })
 export class ExperienceComponent {
-  experiences: { company: string; title: string; description: string }[] = [
+  experiences: { company: string; title: string; description: string[] }[] = [
     {
       company: 'Subitt',
       title: 'Full-stack Web Developer',
-      description: '',
+      description: [
+        'Authored administrative functions, organizing hundreds of customer accounts.',
+        'Influenced the use of a library to create graphical interfaces and visualizations.',
+      ],
     },
   ];
 }

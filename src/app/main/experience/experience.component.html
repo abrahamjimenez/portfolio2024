@@ -2,5 +2,9 @@
 
 @for (experience of experiences; track experience.company) {
   <h3>{{ experience.company }} - {{ experience.title }}</h3>
-  <p>{{ experience.description }}</p>
+  <ul>
+    @for (description of experience.description; track description) {
+      <li>{{ description }}</li>
+    }
+  </ul>
 }

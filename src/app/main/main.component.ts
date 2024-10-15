@@ -4,6 +4,7 @@ import { ToolsAndSkillsComponent } from './tools-and-skills/tools-and-skills.com
 import { ExperienceComponent } from './experience/experience.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
 
 @Component({
   selector: 'app-main',
@@ -13,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
     ExperienceComponent,
     ProjectsComponent,
     ContactComponent,
+    AboutComponent,
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
