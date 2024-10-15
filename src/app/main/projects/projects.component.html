@@ -7,5 +7,9 @@
       <p class="projects__tools-container__tool">{{ tool }}</p>
     }
   </div>
-  <p>{{ project.description }}</p>
+  <ul>
+    @for (description of project.description; track description) {
+      <li>{{ description }}</li>
+    }
+  </ul>
 }
