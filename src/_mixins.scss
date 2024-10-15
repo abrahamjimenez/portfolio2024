@@ -5,7 +5,8 @@
   flex-wrap: wrap;
   gap: 4px;
 
-  &__skill, &__tool {
+  &__skill,
+  &__tool {
     border: 1px solid;
     border-radius: 8px;
     padding: 2px;

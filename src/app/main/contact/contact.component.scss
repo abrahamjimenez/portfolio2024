@@ -6,7 +6,8 @@
     flex-direction: column;
   }
 
-  textarea, input {
+  textarea,
+  input {
     all: unset;
     border: 1px solid;
     background: $secondary-color;

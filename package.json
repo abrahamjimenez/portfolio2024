@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:portfolio2024": "node dist/portfolio2024/server/server.mjs"
+    "serve:ssr:portfolio2024": "node dist/portfolio2024/server/server.mjs",
+    "prettier": "prettier --write ."
   },
   "private": true,
   "dependencies": {
