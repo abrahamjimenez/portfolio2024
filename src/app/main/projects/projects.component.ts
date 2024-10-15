@@ -10,8 +10,24 @@ import { Component } from '@angular/core';
 export class ProjectsComponent {
   projects = [
     {
+      title: "Abraham's Shop",
+      tools: ['MongoDB', 'Express', 'React', 'Node', 'Redux'],
+      description: '',
+    },
+    {
       title: 'HeartSet',
-      role: 'Frontend Web Developer',
+      tools: [
+        'HTML',
+        'SCSS',
+        'JavaScript',
+        'Adobe Illustrator',
+        'Adobe Photoshop',
+      ],
+      description: '',
+    },
+    {
+      title: 'Book of Mormon English Learning App',
+      tools: ['HTML', 'CSS', 'Javascript'],
       description: '',
     },
   ];
