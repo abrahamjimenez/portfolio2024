@@ -1,6 +1,11 @@
 <h2>Projects</h2>
 
 @for (project of projects; track project.title) {
-  <h3>{{ project.title }} - {{ project.role }}</h3>
+  <h3>{{ project.title }}</h3>
+  <div class="projects__tools-container">
+    @for (tool of project.tools; track tool) {
+      <p class="projects__tools-container__tool">{{ tool }}</p>
+    }
+  </div>
   <p>{{ project.description }}</p>
 }
