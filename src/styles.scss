@@ -1,7 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 @import "normalize.css";
 
+$primary-color: #CDB4DB;
+$primary2-color: #A2D2FF;
+$secondary-color: #FFC8DD;
+$secondary2-color: #FFAFCC;
+$accent-color: #BDE0FE;
+
 body {
   max-width: 100%;
   padding: 0 16px;
+  background: $primary2-color;
 }
