@@ -7,7 +7,9 @@
     "server": "nodemon backend/index.ts",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "build": "npm install && npm install --prefix frontend && npm install --prefix backend && npm run build --prefix frontend"
+    "build": "npm run build --prefix frontend",
+    "installAll": "npm install && npm install --prefix frontend && npm install --prefix backend",
+    "development": "npm run serve:ssr:portfolio2024 --prefix frontend"
   },
   "keywords": [],
   "author": "",
