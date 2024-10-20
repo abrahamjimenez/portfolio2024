@@ -1,13 +1,17 @@
 <h2>Contact</h2>
-<form class="form-container">
+<form class="form-container" #form="ngForm" (ngSubmit)="onSubmit(form)">
   <div>
     <label for="email">Email</label>
-    <input type="email" name="email" id="email"/>
+    <input type="email" name="email" id="email" ngModel required email #email="ngModel"/>
   </div>
   <div>
     <label for="message">Message</label>
-    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+    <textarea name="message" id="message" cols="30" rows="10" ngModel #message="ngModel"></textarea>
   </div>
 
   <button type="submit">Submit</button>
+
+  @if (email.touched && message.touched && form.form.invalid) {
+    <p>Invalid values detected</p>
+  }
 </form>

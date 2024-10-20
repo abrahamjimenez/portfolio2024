@@ -6,6 +6,8 @@ const asyncHandler = require("express-async-handler")
 const nodemailer = require("nodemailer")
 
 const sendMail = asyncHandler(async (req: Request, res: Response) => {
+  const {email, message} = req.body
+
   const transporter = nodemailer.createTransport({
     service: "gmail",
     host: "smtp.gmail.com",
@@ -20,8 +22,8 @@ const sendMail = asyncHandler(async (req: Request, res: Response) => {
   const mailOptions: Options = {
     from: process.env.GMAIL,
     to: "abraham.jimenez.romo@proton.me",
-    subject: "Hello from Nodemailer",
-    text: "This is a test email sent using Nodemailer"
+    subject: email,
+    text: message
   }
 
   transporter.sendMail(mailOptions, (error: Error | null, info: SentMessageInfo) => {
