@@ -44,3 +44,6 @@ Thumbs.db
 # CSS
 *.css
 *.css.map
+
+# Env
+.env
